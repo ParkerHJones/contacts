@@ -1,24 +1,18 @@
-# README
+rails new "project_name" -d postgresql --webpack=react
+cd project_name
+bundle add react-rails
+rails g react:install
+rails db:create
+rails s (starts server)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+GEM FILES 
 
-* Ruby version
+UNDER LINE 31 in GemFile
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+  
+BUNDLE in Iterm after putting into GemFile
